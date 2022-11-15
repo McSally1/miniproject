@@ -18,7 +18,7 @@ if(userName == null){
   while(validateUserName(userName) == false){
     userName = prompt("Username must be less than 10 and greater than 0")
   }
-  userDetailDatabase["Username"]=userName
+  userDetailDatabase["userName"]=userName
   
   //Email
   let email = prompt("Enter your email");
@@ -57,7 +57,7 @@ if(userName == null){
   while(validatePhoneNumber(phoneNumber) == false){
     phoneNumber= prompt ("Enter a valid Number")
   }
-  userDetailDatabase["Phone Number"]=phoneNumber
+  userDetailDatabase["phoneNumber"]=phoneNumber
   
   //Password
   let password = prompt("Enter Password");
@@ -91,13 +91,12 @@ if(userName == null){
     confirmPassword = prompt("Password does not match. Try again")
 
   }
- function displayUserDetails(){
+
+}
+function displayUserDetails(){
   alert(`Your Details\n
     Username: ${userDetailDatabase.userName}
     Phone Number: ${userDetailDatabase.phoneNumber}
     Email: ${userDetailDatabase.email}`)
  }
-
-}
-
 
